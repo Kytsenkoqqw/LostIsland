@@ -30,17 +30,19 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Chest/ChestOpenTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Chest/ShowChestButton.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ChestOpentrigger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ChestOpener.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Chest/Chest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ChestOpenTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Chest/Chest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ShowButtonChest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ShowChestButton.cs" />
       </list>
     </option>
   </component>
@@ -86,7 +88,8 @@
       <workItem from="1709041773098" duration="3916000" />
       <workItem from="1709129894083" duration="635000" />
       <workItem from="1709130555167" duration="3859000" />
-      <workItem from="1709134924661" duration="1845000" />
+      <workItem from="1709134924661" duration="2505000" />
+      <workItem from="1709154316324" duration="3403000" />
     </task>
     <servers />
   </component>

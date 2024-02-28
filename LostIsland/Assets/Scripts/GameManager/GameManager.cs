@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     
     [FormerlySerializedAs("PauseMenu")] [SerializeField] private GameObject _pauseMenu;
-    [FormerlySerializedAs("PauseMenu")] [SerializeField] private GameObject _joystick;
-    
+    [FormerlySerializedAs("Joystick")] [SerializeField] private GameObject _joystick;
+    [FormerlySerializedAs("ChestButton")] [SerializeField] private GameObject _chestButton;
     
     public void Resume()
     {
