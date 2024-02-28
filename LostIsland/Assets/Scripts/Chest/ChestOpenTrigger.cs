@@ -7,6 +7,7 @@ public class ChestOpenTrigger : MonoBehaviour
 {
     [SerializeField] private Chest _chest;
     private bool _isOpened = false;
+    private bool _isClosed;
     private bool _hasOpener;
     
     private void OnTriggerEnter(Collider collider)
@@ -15,7 +16,6 @@ public class ChestOpenTrigger : MonoBehaviour
         {
             _hasOpener = true;
         }
-
     }
     
     private void OnTriggerExit(Collider collider)
@@ -28,16 +28,16 @@ public class ChestOpenTrigger : MonoBehaviour
 
     private void Update()
     {
-        if (_hasOpener && Input.GetKeyDown(KeyCode.E))
+        if (_isOpened)
         {
-            _chest.Open();
-            _isOpened = true;
+            return;
         }
         
-        if (_hasOpener && _isOpened && Input.GetKeyDown(KeyCode.Q))
+        if (_hasOpener && Input.GetKeyDown(KeyCode.E))
         {
-            _chest.ClosedChest();
-            _isOpened = false;
+          
+            _chest.Open();
+            _isOpened = true;
         }
     }
 }
