@@ -43,6 +43,11 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Chest" t="Include">
+            <e p="Chest.cs" t="Include" />
+            <e p="ChestOpener.cs" t="Include" />
+            <e p="ChestOpentrigger.cs" t="Include" />
+          </e>
           <e p="GameManager" t="Include">
             <e p="GameManager.cs" t="Include" />
           </e>

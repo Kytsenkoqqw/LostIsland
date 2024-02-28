@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     
     [FormerlySerializedAs("PauseMenu")] [SerializeField] private GameObject _pauseMenu;
-    [FormerlySerializedAs("OffJoystick")] [SerializeField] private  GameObject _joystick;
+    [FormerlySerializedAs("PauseMenu")] [SerializeField] private GameObject _joystick;
     
     
     public void Resume()
