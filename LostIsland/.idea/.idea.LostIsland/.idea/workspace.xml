@@ -41,8 +41,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ChestOpenTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/Chest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ShowButtonChest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ShowChestButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -89,7 +89,8 @@
       <workItem from="1709129894083" duration="635000" />
       <workItem from="1709130555167" duration="3859000" />
       <workItem from="1709134924661" duration="2505000" />
-      <workItem from="1709154316324" duration="3403000" />
+      <workItem from="1709154316324" duration="4133000" />
+      <workItem from="1709205307679" duration="2694000" />
     </task>
     <servers />
   </component>

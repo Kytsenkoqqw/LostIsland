@@ -7,6 +7,8 @@ public class ShowChestButton : MonoBehaviour
 {
    [SerializeField] private GameObject _chestButton;
    private bool _isStay = false;
+   private bool _openChest = false;
+   
 
    private void OnTriggerEnter(Collider other)
    {
@@ -22,6 +24,7 @@ public class ShowChestButton : MonoBehaviour
       if (other.GetComponent<PlayerController>())
       {
          _isStay = false;
+         
          _chestButton.SetActive(false);
       }
    }
