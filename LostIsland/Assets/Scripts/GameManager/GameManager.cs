@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 using UnityEngine.UIElements;
 using Button = UnityEngine.UI.Button;
+using Image = UnityEngine.UI.Image;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,7 +15,7 @@ public class GameManager : MonoBehaviour
     [FormerlySerializedAs("Joystick")] [SerializeField] private GameObject _joystick;
     [FormerlySerializedAs("InventoryChest")] [SerializeField] private GameObject _inventoryChest;
     [FormerlySerializedAs("OpenButtonChest")] [SerializeField] private GameObject _openButtonChest;
-    [FormerlySerializedAs("ClosedButtonChest")] [SerializeField] private GameObject _closedButtonChest;
+    [FormerlySerializedAs("ClosedButtonChest")] [SerializeField] private Transform _closedButtonChest;
     private bool _openChest = false;
     
     
@@ -35,7 +37,6 @@ public class GameManager : MonoBehaviour
         {
             _joystick.SetActive(false);
             _pauseMenu.SetActive(true);
-            //_inventoryChest.GetComponent<Content>().interactable = false;
             _openButtonChest.GetComponent<Button>().interactable = false;
             _closedButtonChest.GetComponent<Button>().interactable = false;
             Time.timeScale = 0;
@@ -45,9 +46,7 @@ public class GameManager : MonoBehaviour
     public void OpenInventoryChest()
     {
         _inventoryChest.SetActive(true);
-        _openButtonChest.SetActive(false); 
-       
-       
+        _openButtonChest.SetActive(false);
     }
 
     public void ClosedInventoryChest()
