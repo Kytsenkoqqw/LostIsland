@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     [FormerlySerializedAs("Joystick")] [SerializeField] private GameObject _joystick;
     [FormerlySerializedAs("InventoryChest")] [SerializeField] private GameObject _inventoryChest;
     [FormerlySerializedAs("OpenButtonChest")] [SerializeField] private GameObject _openButtonChest;
-    [FormerlySerializedAs("ClosedButtonChest")] [SerializeField] private Transform _closedButtonChest;
+    [FormerlySerializedAs("ClosedButtonChest")] [SerializeField] private GameObject _closedButtonChest;
     private bool _openChest = false;
 
     public void Awake()

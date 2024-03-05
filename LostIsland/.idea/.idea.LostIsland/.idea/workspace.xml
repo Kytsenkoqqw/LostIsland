@@ -29,8 +29,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tree/Tree.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Chest/ShowChestButton.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -43,8 +44,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ShowButtonChest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ShowChestButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ClosedChestAnimation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tree/TreeTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tree/Tree.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ChestAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" />
       </list>
     </option>
   </component>
@@ -94,7 +99,8 @@
       <workItem from="1709154316324" duration="4133000" />
       <workItem from="1709205307679" duration="2761000" />
       <workItem from="1709231089690" duration="3195000" />
-      <workItem from="1709298569208" duration="2462000" />
+      <workItem from="1709298569208" duration="3220000" />
+      <workItem from="1709675549587" duration="5083000" />
     </task>
     <servers />
   </component>
@@ -114,5 +120,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="794" y="221" key="RiderGenerateDialog" timestamp="1709677458181">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1709677458181" />
   </component>
 </project>

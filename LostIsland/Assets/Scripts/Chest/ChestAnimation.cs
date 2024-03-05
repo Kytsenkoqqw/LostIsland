@@ -7,8 +7,7 @@ public class ChestAnimation : MonoBehaviour
 {
     [SerializeField] private string ClosedChest = "Closed";
     [FormerlySerializedAs("_closedChestButton")] [SerializeField] private GameObject _openChestButton;
-   // private readonly int ClosedChest = Animator.StringToHash("Closed");
-    private bool _isStay = false;
+    private bool _isStay;
     private bool _openChest = false;
     private Animator _animator;
 
