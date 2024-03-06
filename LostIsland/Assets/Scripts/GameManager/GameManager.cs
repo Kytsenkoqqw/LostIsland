@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     [FormerlySerializedAs("Joystick")] [SerializeField] private GameObject _joystick;
     [FormerlySerializedAs("InventoryChest")] [SerializeField] private GameObject _inventoryChest;
     [FormerlySerializedAs("OpenButtonChest")] [SerializeField] private GameObject _openButtonChest;
-    [FormerlySerializedAs("ClosedButtonChest")] [SerializeField] private GameObject _closedButtonChest;
+    [FormerlySerializedAs("ClosedButtonChest")] [SerializeField] private GameObject _resumeButton;
     private bool _openChest = false;
 
     public void Awake()
@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
             _joystick.SetActive(true);
             _pauseMenu.SetActive(false);
             _openButtonChest.GetComponent<Button>().interactable = true;
-            _closedButtonChest.GetComponent<Button>().interactable = true;
+            _resumeButton.GetComponent<Button>().interactable = true;
             Time.timeScale = 1;
         }
     }
@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
             _joystick.SetActive(false);
             _pauseMenu.SetActive(true);
             _openButtonChest.GetComponent<Button>().interactable = false;
-            _closedButtonChest.GetComponent<Button>().interactable = false;
+            _resumeButton.GetComponent<Button>().interactable = false;
             Time.timeScale = 0;
         }
     }
