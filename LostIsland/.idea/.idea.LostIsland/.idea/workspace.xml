@@ -49,6 +49,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/IShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ChestAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Button/IShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" />
       </list>
     </option>
@@ -100,7 +101,8 @@
       <workItem from="1709205307679" duration="2761000" />
       <workItem from="1709231089690" duration="3195000" />
       <workItem from="1709298569208" duration="3220000" />
-      <workItem from="1709675549587" duration="5083000" />
+      <workItem from="1709675549587" duration="5242000" />
+      <workItem from="1709728445509" duration="2180000" />
     </task>
     <servers />
   </component>
@@ -122,9 +124,9 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="794" y="221" key="RiderGenerateDialog" timestamp="1709677458181">
+    <state x="794" y="221" key="RiderGenerateDialog" timestamp="1709729960286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1709677458181" />
+    <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1709729960286" />
   </component>
 </project>
