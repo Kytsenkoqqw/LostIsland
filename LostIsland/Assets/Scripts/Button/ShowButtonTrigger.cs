@@ -8,6 +8,7 @@ public class ShowButtonTrigger : MonoBehaviour, IShowButtonTrigger
     [SerializeField] private GameObject _treeButtonPrefab;
     [SerializeField] private Transform _spawnButtonPoint;
     [SerializeField] private Image _imageButton;
+    private GameObject _spawnedButton;
 
     public void OnTriggerEnter(Collider collider)
     {
@@ -26,13 +27,17 @@ public class ShowButtonTrigger : MonoBehaviour, IShowButtonTrigger
 
     public void ShowButton()
     {
-        var Button = Instantiate(_treeButtonPrefab, _spawnButtonPoint.position, Quaternion.identity);
-        Button.transform.SetParent(_spawnButtonPoint);
-        _treeButtonPrefab.SetActive(true);
+        _spawnedButton = Instantiate(_treeButtonPrefab, _spawnButtonPoint);
+        _spawnedButton.SetActive(true);
+        
+        
     }
 
     public void HideButton()
     {
-        _treeButtonPrefab.SetActive(false);
+        if (_spawnedButton != null)
+        {
+            _spawnedButton.SetActive(false);
+        }
     }
 }
