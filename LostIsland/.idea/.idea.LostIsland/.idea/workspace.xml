@@ -48,9 +48,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Tree/Tree.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ChestAnimation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/IShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LoadScreen/LoadScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuManager/ManuManager.cs" />
       </list>
     </option>
@@ -111,7 +112,8 @@
       <workItem from="1710172270256" duration="2321000" />
       <workItem from="1711407835405" duration="718000" />
       <workItem from="1711542582933" duration="1437000" />
-      <workItem from="1711555030393" duration="293000" />
+      <workItem from="1711555030393" duration="2184000" />
+      <workItem from="1711573794201" duration="3209000" />
     </task>
     <servers />
   </component>
