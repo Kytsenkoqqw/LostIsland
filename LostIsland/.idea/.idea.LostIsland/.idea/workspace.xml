@@ -31,6 +31,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MenuManager/ManuManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -50,6 +51,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/IShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MenuManager/ManuManager.cs" />
       </list>
     </option>
   </component>
@@ -108,7 +110,8 @@
       <workItem from="1709992050300" duration="1166000" />
       <workItem from="1710172270256" duration="2321000" />
       <workItem from="1711407835405" duration="718000" />
-      <workItem from="1711542582933" duration="1214000" />
+      <workItem from="1711542582933" duration="1437000" />
+      <workItem from="1711555030393" duration="293000" />
     </task>
     <servers />
   </component>

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
@@ -13,10 +14,11 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     [FormerlySerializedAs("PauseMenu")] [SerializeField] private GameObject _pauseMenu;
-    [FormerlySerializedAs("Joystick")] [SerializeField] private GameObject _joystick;
-    [FormerlySerializedAs("InventoryChest")] [SerializeField] private GameObject _inventoryChest;
-    [FormerlySerializedAs("OpenButtonChest")] [SerializeField] private GameObject _openButtonChest;
-    [FormerlySerializedAs("ClosedButtonChest")] [SerializeField] private GameObject _resumeButton;
+    [SerializeField] private GameObject _joystick;
+    [SerializeField] private GameObject _inventoryChest;
+    [SerializeField] private GameObject _openButtonChest;
+    [SerializeField] private GameObject _resumeButton;
+    [SerializeField] private GameObject _exitToMenuButon;
     private bool _openChest = false;
 
     public void Awake()
@@ -49,6 +51,11 @@ public class GameManager : MonoBehaviour
             _resumeButton.GetComponent<Button>().interactable = false;
             Time.timeScale = 0;
         }
+    }
+
+    public void ExitToMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void OpenInventoryChest()

@@ -53,6 +53,9 @@
           <e p="GameManager" t="Include">
             <e p="GameManager.cs" t="Include" />
           </e>
+          <e p="MenuManager" t="Include">
+            <e p="ManuManager.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="PlayerController.cs" t="Include" />
           </e>
