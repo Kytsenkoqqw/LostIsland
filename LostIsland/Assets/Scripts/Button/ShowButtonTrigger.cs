@@ -29,8 +29,6 @@ public class ShowButtonTrigger : MonoBehaviour, IShowButtonTrigger
     {
         _spawnedButton = Instantiate(_treeButtonPrefab, _spawnButtonPoint);
         _spawnedButton.SetActive(true);
-        
-        
     }
 
     public void HideButton()
