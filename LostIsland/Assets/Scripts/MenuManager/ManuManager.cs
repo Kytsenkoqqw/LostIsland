@@ -16,8 +16,9 @@ public class ManuManager : MonoBehaviour
     public void Play()
     {
         _loadingScreen.SetActive(true);
-        StartCoroutine(LoadAsync());
         Time.timeScale = 1; 
+        StartCoroutine(LoadAsync());
+        
     }
 
     IEnumerator LoadAsync()

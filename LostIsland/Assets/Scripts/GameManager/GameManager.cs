@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
             _resumeButton.GetComponent<Button>().interactable = true;
             _closedButtonChestInventory.GetComponent<Button>().interactable = true;
             _scrollViewInventory.GetComponent<ScrollRect>().enabled = true;
-            _buttonInInventory.GetComponent<Button>().interactable = false;
+            _buttonInInventory.GetComponent<Button>().interactable = true;
             Time.timeScale = 1;
         }
     }
@@ -51,6 +51,7 @@ public class GameManager : MonoBehaviour
     {
         if (Time.timeScale != 0)
         {
+            Time.timeScale = 0;
             _joystick.SetActive(false);
             _pauseMenu.SetActive(true);
             _openButtonChest.GetComponent<Button>().interactable = false;
@@ -58,7 +59,6 @@ public class GameManager : MonoBehaviour
             _closedButtonChestInventory.GetComponent<Button>().interactable = false;
             _scrollViewInventory.GetComponent<ScrollRect>().enabled = false;
             _buttonInInventory.GetComponent<Button>().interactable = false;
-            Time.timeScale = 0;
         }
     }
 
