@@ -30,8 +30,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MenuManager/ManuManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -50,10 +50,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/IShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ChestAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/IShowButtonTrigger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadScreen/LoadScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuManager/ManuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" />
       </list>
     </option>
@@ -117,6 +117,7 @@
       <workItem from="1711555030393" duration="2184000" />
       <workItem from="1711573794201" duration="4117000" />
       <workItem from="1711983837899" duration="2940000" />
+      <workItem from="1713280673223" duration="203000" />
     </task>
     <servers />
   </component>
@@ -142,9 +143,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1709729960286" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1710172319840">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1713280876374">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1710172319840" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1713280876374" />
   </component>
 </project>

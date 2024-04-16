@@ -21,9 +21,9 @@ public class DialogueSystem : MonoBehaviour
         index = 0;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.GetComponent<PlayerController>())
+        if (collision.gameObject.GetComponent<PlayerController>())
         {
             Debug.Log("Bob");
             _dailogPanel.SetActive(true);
@@ -31,9 +31,9 @@ public class DialogueSystem : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnCollisionExit(Collision collision)
     {
-        if (other.GetComponent<PlayerController>())
+        if (collision.gameObject.GetComponent<PlayerController>())
         {
             _dailogPanel.SetActive(false);
             StopAllCoroutines();

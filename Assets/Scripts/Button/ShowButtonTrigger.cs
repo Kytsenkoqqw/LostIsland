@@ -10,16 +10,16 @@ public class ShowButtonTrigger : MonoBehaviour, IShowButtonTrigger
     [SerializeField] private Image _imageButton;
     private GameObject _spawnedButton;
 
-    public void OnTriggerEnter(Collider collider)
+    public void OnCollisionEnter(Collision collision)
     {
-        if (collider.GetComponent<PlayerController>())
+        if (collision.gameObject.GetComponent<PlayerController>())
         {
             ShowButton();
             Debug.Log("Enter");
         }
     }
     
-    public void OnTriggerExit(Collider collider)
+    public void OnCollisionExit(Collision collision)
     {
         HideButton();
         Debug.Log("Exit");
