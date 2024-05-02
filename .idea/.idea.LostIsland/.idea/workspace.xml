@@ -55,6 +55,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shader/TeleportShader.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Teleport/Teleport.cs" />
       </list>
     </option>
   </component>
@@ -68,7 +70,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -117,7 +119,8 @@
       <workItem from="1711555030393" duration="2184000" />
       <workItem from="1711573794201" duration="4117000" />
       <workItem from="1711983837899" duration="2940000" />
-      <workItem from="1713280673223" duration="203000" />
+      <workItem from="1713280673223" duration="480000" />
+      <workItem from="1714666790873" duration="2692000" />
     </task>
     <servers />
   </component>
@@ -143,9 +146,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1709729960286" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1713280876374">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1714669780434">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1713280876374" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1714669780434" />
   </component>
 </project>
