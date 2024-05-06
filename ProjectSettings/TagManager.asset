@@ -44,3 +44,6 @@ TagManager:
   - name: Tree
     uniqueID: 281926643
     locked: 0
+  - name: ButtonChest
+    uniqueID: 2286213183
+    locked: 0

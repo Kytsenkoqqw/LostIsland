@@ -18,7 +18,6 @@ public class ManuManager : MonoBehaviour
         _loadingScreen.SetActive(true);
         Time.timeScale = 1; 
         StartCoroutine(LoadAsync());
-        
     }
 
     IEnumerator LoadAsync()

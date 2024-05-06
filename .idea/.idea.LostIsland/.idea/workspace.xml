@@ -51,12 +51,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ChestAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/IShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadScreen/LoadScreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MenuManager/ManuManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Shader/TeleportShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Teleport/Teleport.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MenuManager/ManuManager.cs" />
       </list>
     </option>
   </component>
@@ -120,7 +121,8 @@
       <workItem from="1711573794201" duration="4117000" />
       <workItem from="1711983837899" duration="2940000" />
       <workItem from="1713280673223" duration="480000" />
-      <workItem from="1714666790873" duration="2692000" />
+      <workItem from="1714666790873" duration="3389000" />
+      <workItem from="1715007628843" duration="983000" />
     </task>
     <servers />
   </component>

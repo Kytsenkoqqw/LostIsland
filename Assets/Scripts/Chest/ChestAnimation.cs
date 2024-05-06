@@ -22,6 +22,7 @@ public class ChestAnimation : MonoBehaviour
         {
             _isStay = true;
             _openChestButton.SetActive(true);
+            _openChestButton.GetComponentInParent<ChestAnimation>();
         }
     }
 
