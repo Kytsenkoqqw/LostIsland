@@ -46,6 +46,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Button" t="Include">
+            <e p="ChestButton.cs" t="Include" />
             <e p="IShowButtonTrigger.cs" t="Include" />
             <e p="ShowButtonTrigger.cs" t="Include" />
           </e>
