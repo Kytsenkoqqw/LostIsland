@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TreeDestroy : MonoBehaviour
 {
-    private void DieTree()
+    public void OnButtonClick()
     {
         StartCoroutine(DestroyTree());
     }

@@ -3,39 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ShowButtonTrigger : MonoBehaviour, IShowButtonTrigger
+public class ShowButtonTrigger : MonoBehaviour
 {
-    [SerializeField] private GameObject _treeButtonPrefab;
-    [SerializeField] private Transform _spawnButtonPoint;
+    [SerializeField] private GameObject _treeButton;
     [SerializeField] private Image _imageButton;
-    private GameObject _spawnedButton;
+    //private GameObject _spawnedButton;
 
     public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.GetComponent<PlayerController>())
         {
-            ShowButton();
+            _treeButton.SetActive(true);
             Debug.Log("Enter");
         }
     }
     
     public void OnCollisionExit(Collision collision)
     {
-        HideButton();
-        Debug.Log("Exit");
-    }
-
-    public void ShowButton()
-    {
-        _spawnedButton = Instantiate(_treeButtonPrefab, _spawnButtonPoint);
-        _spawnedButton.SetActive(true);
-    }
-
-    public void HideButton()
-    {
-        if (_spawnedButton != null)
+        if (collision.gameObject.GetComponent<PlayerController>())
         {
-            _spawnedButton.SetActive(false);
+            _treeButton.SetActive(false);
+            Debug.Log("Exit");
         }
+        
     }
 }

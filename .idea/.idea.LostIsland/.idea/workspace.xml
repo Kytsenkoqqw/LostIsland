@@ -52,7 +52,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/IShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/IShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadScreen/LoadScreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Shader/TeleportShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Teleport/Teleport.cs" />
@@ -61,6 +60,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ChestAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/ChestButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tree/TreeDestroy.cs" />
       </list>
     </option>
@@ -131,7 +131,7 @@
       <workItem from="1715085104777" duration="665000" />
       <workItem from="1715258650621" duration="1203000" />
       <workItem from="1715544403765" duration="50000" />
-      <workItem from="1715601634320" duration="1555000" />
+      <workItem from="1715601634320" duration="3463000" />
     </task>
     <servers />
   </component>
