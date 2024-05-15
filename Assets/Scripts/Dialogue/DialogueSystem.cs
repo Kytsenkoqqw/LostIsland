@@ -15,7 +15,7 @@ public class DialogueSystem : MonoBehaviour
     public int index;
 
    
-    void Start () 
+    private void Start () 
     {
         _dailogPanel.SetActive(false);  
         index = 0;
