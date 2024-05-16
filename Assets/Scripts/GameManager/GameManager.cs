@@ -22,6 +22,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _closedButtonChestInventory;
     [SerializeField] private ScrollRect _scrollViewInventory;
     [SerializeField] private GameObject _buttonInInventory;
+    [SerializeField] private GameObject _closedButtonInventory;
+    [SerializeField] private GameObject _openInventoryButton;
+    [SerializeField] private GameObject _inventoryPlayer;
     private bool _openChest = false;
 
     public void Awake()
@@ -64,6 +67,8 @@ public class GameManager : MonoBehaviour
 
     public void ExitToMenu()
     {
+        _scrollViewInventory.GetComponent<ScrollRect>().enabled = true;
+        _buttonInInventory.GetComponent<Button>().interactable = true;
         SceneManager.LoadScene(0);
     }
 
@@ -77,5 +82,15 @@ public class GameManager : MonoBehaviour
     {
         _inventoryChest.SetActive(false);
         _openButtonChest.SetActive(true);
+    }
+
+    public void OpenInventoryPlayer()
+    {
+        _inventoryPlayer.SetActive(true);
+    }
+
+    public void ClosedInventoryPlayer()
+    {
+        _inventoryPlayer.SetActive(false);
     }
 }

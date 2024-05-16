@@ -10,6 +10,7 @@ public class ChestAnimation : MonoBehaviour
     private bool _isStay;
     private bool _openChest = false;
     private Animator _animator;
+    
 
     private void Start()
     {
