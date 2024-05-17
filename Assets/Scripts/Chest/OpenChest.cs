@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class ChestAnimation : MonoBehaviour
+public class OpenChest : MonoBehaviour
 {
-    [SerializeField] private string ClosedChest = "Closed";
     [FormerlySerializedAs("_closedChestButton")] [SerializeField] private GameObject _openChestButton;
+    [SerializeField] private string ClosedChest = "Closed";
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip _openChestSound;
     private bool _isStay;
     private bool _openChest = false;
     private Animator _animator;
@@ -15,6 +17,8 @@ public class ChestAnimation : MonoBehaviour
     private void Start()
     {
         _animator = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
+        _audioSource.clip = _openChestSound;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -23,7 +27,7 @@ public class ChestAnimation : MonoBehaviour
         {
             _isStay = true;
             _openChestButton.SetActive(true);
-            _openChestButton.GetComponentInParent<ChestAnimation>();
+            _openChestButton.GetComponentInParent<OpenChest>();
         }
     }
 
@@ -36,6 +40,14 @@ public class ChestAnimation : MonoBehaviour
             GameManager.instance.ClosedInventoryChest();
             _openChestButton.SetActive(false);
             
+        }
+    }
+
+    public void PlayOpenChestSound()
+    {
+        if (_audioSource != null && _openChestSound != null)
+        {
+            _audioSource.Play();
         }
     }
 }

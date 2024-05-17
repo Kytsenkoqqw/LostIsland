@@ -55,13 +55,15 @@
         <option value="$PROJECT_DIR$/Assets/Shader/TeleportShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Teleport/Teleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ChestAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/ChestButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tree/TreeDestroy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuManager/ManuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ChestAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tree/ChoppingWoodSound.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Chest/OpenChest.cs" />
       </list>
     </option>
   </component>
@@ -75,7 +77,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -133,7 +135,8 @@
       <workItem from="1715544403765" duration="50000" />
       <workItem from="1715601634320" duration="4298000" />
       <workItem from="1715790782589" duration="3268000" />
-      <workItem from="1715857858431" duration="3075000" />
+      <workItem from="1715857858431" duration="5775000" />
+      <workItem from="1715955388667" duration="1343000" />
     </task>
     <servers />
   </component>
@@ -159,9 +162,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1709729960286" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1714669780434">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1715872756997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1714669780434" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1715872756997" />
   </component>
 </project>
