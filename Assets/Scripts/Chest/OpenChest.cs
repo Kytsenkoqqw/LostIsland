@@ -50,4 +50,9 @@ public class OpenChest : MonoBehaviour
             _audioSource.Play();
         }
     }
+
+    public void ClosedChestButton()
+    {
+        _animator.SetTrigger(ClosedChest);
+    }
 }
