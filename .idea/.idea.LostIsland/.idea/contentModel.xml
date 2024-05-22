@@ -71,6 +71,10 @@
           <e p="GameManager" t="Include">
             <e p="GameManager.cs" t="Include" />
           </e>
+          <e p="InventoryPlayer" t="Include">
+            <e p="Inventory.cs" t="Include" />
+            <e p="PickupItem.cs" t="Include" />
+          </e>
           <e p="MenuManager" t="Include">
             <e p="ManuManager.cs" t="Include" />
           </e>
@@ -161,6 +165,18 @@
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
             <e p="EmojiOne.json" t="Include" />
+          </e>
+        </e>
+        <e p="WaterWorks" t="Include">
+          <e p="DOCUMENTATION.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="Water_Settings.cs" t="Include" />
+            <e p="Water_Volume.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="Volumetric_Water.shader" t="Include" />
+            <e p="Water_Volume.hlsl" t="Include" />
+            <e p="WaterSSR.hlsl" t="Include" />
           </e>
         </e>
       </e>
