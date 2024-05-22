@@ -5,14 +5,16 @@ using UnityEngine;
 public class PlayerAnimation : MonoBehaviour
 {
     private Animator _animator;
-    // Start is called before the first frame update
+    [SerializeField] private Rigidbody _rb;
+    
     void Start()
     {
-        _animator = GetComponentInChildren<Animator>();
+        _animator = GetComponent<Animator>();
+        _rb = GetComponent<Rigidbody>();
     }
 
-    public void PlayerMoveAnimation(float speed)
+    public void Update()
     {
-        _animator.SetFloat("Speed", Mathf.Abs(speed));
+        _animator.SetFloat("speed", _rb.velocity.magnitude);
     }
 }

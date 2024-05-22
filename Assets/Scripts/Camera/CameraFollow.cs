@@ -6,7 +6,7 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField] private Transform _target;
-    private Vector3 _offset = new Vector3(10f, 10f, -10f);
+    private Vector3 _offset = new Vector3(10f, 13f, -10f);
 
     private void LateUpdate()
     {

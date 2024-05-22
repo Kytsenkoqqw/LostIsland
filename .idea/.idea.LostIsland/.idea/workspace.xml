@@ -35,6 +35,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Item.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MenuManager/ManuManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -55,7 +56,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadScreen/LoadScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/Shader/TeleportShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Teleport/Teleport.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/ChestButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" />
@@ -69,6 +69,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/PlayerInventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" />
       </list>
     </option>
   </component>
@@ -143,7 +145,8 @@
       <workItem from="1715857858431" duration="5775000" />
       <workItem from="1715955388667" duration="2809000" />
       <workItem from="1716378623374" duration="2441000" />
-      <workItem from="1716381481922" duration="2016000" />
+      <workItem from="1716381481922" duration="2269000" />
+      <workItem from="1716388696815" duration="1057000" />
     </task>
     <servers />
   </component>
