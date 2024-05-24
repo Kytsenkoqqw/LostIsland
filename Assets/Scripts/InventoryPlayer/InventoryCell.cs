@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class InventoryCell : MonoBehaviour
 {
-    [SerializeField] private Text _nameField;
+    [SerializeField] private TMP_Text _nameField;
     [SerializeField] private Image _iconField;
     
     public void Render(IItem item)
