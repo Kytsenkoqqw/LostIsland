@@ -76,7 +76,11 @@
           </e>
           <e p="InventoryPlayer" t="Include">
             <e p="Inventory.cs" t="Include" />
-            <e p="Item.cs" t="Include" />
+            <e p="InventoryCell.cs" t="Include" />
+          </e>
+          <e p="Item" t="Include">
+            <e p="AssetItem.cs" t="Include" />
+            <e p="IItem.cs" t="Include" />
           </e>
           <e p="MenuManager" t="Include">
             <e p="ManuManager.cs" t="Include" />

@@ -32,11 +32,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/ChestButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tree/TreeDestroy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Item.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MenuManager/ManuManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/IItem.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -66,11 +67,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Tree/ChoppingWoodSound.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/OpenChest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/PickupItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/PlayerInventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/PickUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/IItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/AssetItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/InventoryCell.cs" />
       </list>
     </option>
   </component>
@@ -146,7 +151,8 @@
       <workItem from="1715955388667" duration="2809000" />
       <workItem from="1716378623374" duration="2441000" />
       <workItem from="1716381481922" duration="2269000" />
-      <workItem from="1716388696815" duration="1057000" />
+      <workItem from="1716388696815" duration="4731000" />
+      <workItem from="1716552458678" duration="3574000" />
     </task>
     <servers />
   </component>
@@ -168,10 +174,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="794" y="221" key="RiderGenerateDialog" timestamp="1709729960286">
+    <state x="794" y="221" key="RiderGenerateDialog" timestamp="1716552693851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1709729960286" />
+    <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1716552693851" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1715872756997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
