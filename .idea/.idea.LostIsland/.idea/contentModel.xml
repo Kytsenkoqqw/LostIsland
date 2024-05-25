@@ -86,6 +86,10 @@
           <e p="Item" t="Include">
             <e p="AssetItem.cs" t="Include" />
             <e p="IItem.cs" t="Include" />
+            <e p="ItemScenePresenter.cs" t="Include" />
+            <e p="ItemsEjector.cs" t="Include" />
+            <e p="ItemsObjectPool.cs" t="Include" />
+            <e p="MovingAlongCurve.cs" t="Include" />
           </e>
           <e p="MenuManager" t="Include">
             <e p="ManuManager.cs" t="Include" />

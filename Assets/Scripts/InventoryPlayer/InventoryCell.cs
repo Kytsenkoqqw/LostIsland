@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -9,6 +11,7 @@ using UnityEngine.UI;
 
 public class InventoryCell : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+    public event Action Ejecting;
     [SerializeField] private TMP_Text _nameField;
     [SerializeField] private Image _iconField;
 
@@ -39,6 +42,31 @@ public class InventoryCell : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        if (In((RectTransform) _originalParent))
+        {
+            InsertInGrig();
+        }
+        else
+        {
+            Eject();
+        }
+    }
+
+    private bool In(RectTransform originalParent)
+    {
+        Vector2 localMousePosition = originalParent.InverseTransformPoint(Input.mousePosition);
+        bool isInside = originalParent.rect.Contains(localMousePosition);
+        Debug.Log("Is Inside: " + isInside);
+        return isInside;
+    }
+
+    private void Eject()
+    {
+        Ejecting?.Invoke();
+    }
+
+    private void InsertInGrig()
+    {
         int closestIndex = 0;
         for (int i = 0; i < _originalParent.transform.childCount; i++)
         {
@@ -50,6 +78,5 @@ public class InventoryCell : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
         transform.parent = _originalParent;
         transform.SetSiblingIndex(closestIndex);
-
     }
 }

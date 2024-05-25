@@ -10,6 +10,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] private InventoryCell _inventoryCellTemplate;
     [SerializeField] private Transform _container;
     [SerializeField] private Transform _draggingParent;
+    [SerializeField] private ItemsEjector _ejector;
 
     public void OnEnable()
     {
@@ -28,6 +29,8 @@ public class Inventory : MonoBehaviour
             var cell = Instantiate(_inventoryCellTemplate, _container);
             cell.Init(_draggingParent);
             cell.Render(item);
+            cell.Ejecting += () => Destroy(cell.gameObject);
+            cell.Ejecting += () => _ejector.EjectFromPool(item, _ejector.transform.position, _ejector.transform.right);
         }
         );
     }
