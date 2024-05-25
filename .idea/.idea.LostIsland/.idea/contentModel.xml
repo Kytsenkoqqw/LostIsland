@@ -75,6 +75,11 @@
             <e p="GameManager.cs" t="Include" />
           </e>
           <e p="InventoryPlayer" t="Include">
+            <e p="InterfaceInventory" t="Include">
+              <e p="IBeginDragHandler.cs" t="Include" />
+              <e p="IDragHandler.cs" t="Include" />
+              <e p="IEndDragHandler.cs" t="Include" />
+            </e>
             <e p="Inventory.cs" t="Include" />
             <e p="InventoryCell.cs" t="Include" />
           </e>

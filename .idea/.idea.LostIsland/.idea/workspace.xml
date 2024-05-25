@@ -72,9 +72,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/PickUp.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/IItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/AssetItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/InterfaceInventory/IBeginDragHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/InterfaceInventory/IDragHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/InterfaceInventory/IEndDragHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/InventoryCell.cs" />
       </list>
     </option>
@@ -153,7 +156,8 @@
       <workItem from="1716381481922" duration="2269000" />
       <workItem from="1716388696815" duration="4731000" />
       <workItem from="1716552458678" duration="4034000" />
-      <workItem from="1716557869872" duration="376000" />
+      <workItem from="1716557869872" duration="1852000" />
+      <workItem from="1716636809117" duration="1101000" />
     </task>
     <servers />
   </component>
