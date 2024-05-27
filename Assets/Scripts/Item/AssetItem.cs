@@ -10,5 +10,6 @@ namespace Item
 
         [SerializeField] private string _name;
         [SerializeField] private Sprite _uiIcon;
+       
     }
 }

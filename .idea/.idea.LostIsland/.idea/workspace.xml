@@ -72,18 +72,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/PickUp.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/IItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/AssetItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/InterfaceInventory/IBeginDragHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/InterfaceInventory/IDragHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/InterfaceInventory/IEndDragHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/InventoryCell.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/MovingAloveCurve.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/MovingAlongCurve.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemScenePresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemsObjectPool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/AssetItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/IItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemScenePresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemsEjector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Inventory.cs" />
       </list>
     </option>
   </component>
@@ -162,7 +162,8 @@
       <workItem from="1716388696815" duration="4731000" />
       <workItem from="1716552458678" duration="4034000" />
       <workItem from="1716557869872" duration="1852000" />
-      <workItem from="1716636809117" duration="8202000" />
+      <workItem from="1716636809117" duration="8923000" />
+      <workItem from="1716813411026" duration="1886000" />
     </task>
     <servers />
   </component>
