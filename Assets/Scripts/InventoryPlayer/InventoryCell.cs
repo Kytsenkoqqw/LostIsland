@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using Item;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -12,6 +13,7 @@ using UnityEngine.UI;
 public class InventoryCell : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public event Action Ejecting;
+    private AssetItem _item;
     [SerializeField] private TMP_Text _nameField;
     [SerializeField] private Image _iconField;
 
@@ -22,10 +24,11 @@ public class InventoryCell : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         _draggingParent = draggingParent;
         _originalParent = transform.parent;
-    } 
-    
-    public void Render(IItem item)
+    }
+
+    public void Render(AssetItem item)
     {
+        _item = item;
         _nameField.text = item.Name;
         _iconField.sprite = item.UIIcon;
     }
@@ -42,9 +45,9 @@ public class InventoryCell : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if (In((RectTransform) _originalParent))
+        if (In((RectTransform)_originalParent))
         {
-            InsertInGrig();
+            InsertInGrid();
         }
         else
         {
@@ -63,9 +66,14 @@ public class InventoryCell : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     private void Eject()
     {
         Ejecting?.Invoke();
+        ItemsEjector ejector = FindObjectOfType<ItemsEjector>();
+        if (ejector != null)
+        {
+            ejector.EjectFromPool(_item, _originalParent.position, Vector3.right);
+        }
     }
 
-    private void InsertInGrig()
+    private void InsertInGrid()
     {
         int closestIndex = 0;
         for (int i = 0; i < _originalParent.transform.childCount; i++)

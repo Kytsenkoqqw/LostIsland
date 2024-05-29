@@ -35,7 +35,7 @@ using Item;
                 {
                     return;
                 }
-
+                
                 presenter.gameObject.SetActive(false);
                 _available.Add(presenter);
             }

@@ -28,6 +28,12 @@ public class Inventory : MonoBehaviour
         Render(Items);
     }
 
+    public void AddItem(AssetItem item)
+    {
+        Items.Add(item);
+        Render(Items);
+    }
+
     public void Render(List<AssetItem> items)
     {
         foreach (Transform child in _container)
@@ -40,16 +46,9 @@ public class Inventory : MonoBehaviour
             var cell = Instantiate(_inventoryCellTemplate, _container);
             cell.Init(_draggingParent);
             cell.Render(item);
+            cell.Ejecting += () => Destroy(cell.gameObject);
             cell.Ejecting += () => _ejector.EjectFromPool(item, _ejector.transform.position, _ejector.transform.right);
         }
         );
     }
-
-    public void AddItem(AssetItem newItem)
-    {
-        Items.Add(newItem);
-        Render(Items);
-    }
-
-    
 }

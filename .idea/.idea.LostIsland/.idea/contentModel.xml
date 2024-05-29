@@ -82,6 +82,7 @@
             </e>
             <e p="Inventory.cs" t="Include" />
             <e p="InventoryCell.cs" t="Include" />
+            <e p="PickUp.cs" t="Include" />
           </e>
           <e p="Item" t="Include">
             <e p="AssetItem.cs" t="Include" />

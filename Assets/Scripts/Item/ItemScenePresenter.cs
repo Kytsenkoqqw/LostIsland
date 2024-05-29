@@ -20,7 +20,6 @@ namespace Item
         {
             PickedUp?.Invoke();
         }
-
     }
 
     
