@@ -7,11 +7,11 @@ namespace Item
     {
         public string Name => _name;
         public Sprite UIIcon => _uiIcon;
-        public GameObject ObjectPrefab => _objectPrefab;
+        public GameObject Prefab => _prefab;
 
         [SerializeField] private string _name;
         [SerializeField] private Sprite _uiIcon;
-        [SerializeField] private GameObject _objectPrefab;
+        [SerializeField] private GameObject _prefab;
 
     }
 }

@@ -24,6 +24,8 @@ using Item;
             {
                 presenter = _available[0];
                 _available.Remove(presenter);
+                presenter.gameObject.SetActive(true);
+                presenter.Present(item);
             }
             
             _inUse.Add(presenter);

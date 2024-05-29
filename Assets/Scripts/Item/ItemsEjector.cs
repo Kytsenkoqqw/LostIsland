@@ -8,14 +8,15 @@ using UnityEngine.Rendering.Universal;
 public class ItemsEjector : MonoBehaviour
 {
     
+    [SerializeField] private ItemsObjectPool _pool;
     [SerializeField] private float _range;
     [SerializeField] private TerrainCollider _ground;
 
     public void EjectFromPool(AssetItem item, Vector3 position, Vector3 direction)
     {
-        if (item.ObjectPrefab != null)
+        if (item.Prefab != null)
         {
-            GameObject ejectedItem = Instantiate(item.ObjectPrefab, position, Quaternion.identity);
+            GameObject ejectedItem = Instantiate(item.Prefab, position, Quaternion.identity);
             var target = position + (direction.normalized * _range);
             target = _ground.bounds.ClosestPoint(target);
 
@@ -30,7 +31,6 @@ public class ItemsEjector : MonoBehaviour
         {
             Debug.LogWarning($"Item {item.Name} does not have a prefab assigned.");
         }
-    
     }
 }
        

@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f590138903d4a4cbd6fc7e4ccbaf12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lootPrefab: {fileID: 5908477514278511380, guid: 20622c8304f02424f8c38ab3c779479d, type: 3}
+  _lootPrefab: {fileID: 5908477514278511380, guid: e2a37efa02dcebe4bb0ecd876daec91b, type: 3}
   _dropPoint: {fileID: 94255850658597145}
 --- !u!114 &3090324210173191659
 MonoBehaviour:
