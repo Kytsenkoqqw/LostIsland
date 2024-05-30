@@ -3428,6 +3428,7 @@ MonoBehaviour:
   _pool: {fileID: 0}
   _range: 2
   _ground: {fileID: 825020291}
+  itemData: {fileID: 0}
 --- !u!1 &825020290
 GameObject:
   m_ObjectHideFlags: 0

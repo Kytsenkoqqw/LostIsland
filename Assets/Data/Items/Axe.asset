@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Axe
   _uiIcon: {fileID: 21300000, guid: feb3baff9e65c174086bca2208594faa, type: 3}
+  _prefab: {fileID: 2755124576261185254, guid: f1d07905e78220b47b8543d34fae92a5, type: 3}

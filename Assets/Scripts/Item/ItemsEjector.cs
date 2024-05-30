@@ -11,26 +11,25 @@ public class ItemsEjector : MonoBehaviour
     [SerializeField] private ItemsObjectPool _pool;
     [SerializeField] private float _range;
     [SerializeField] private TerrainCollider _ground;
-
-    public void EjectFromPool(AssetItem item, Vector3 position, Vector3 direction)
+    [SerializeField] private AssetItem itemData;
+    
+    public void EjectFromPool(IItem item, Vector3 position, Vector3 direction)
     {
-        if (item.Prefab != null)
-        {
-            GameObject ejectedItem = Instantiate(item.Prefab, position, Quaternion.identity);
-            var target = position + (direction.normalized * _range);
-            target = _ground.bounds.ClosestPoint(target);
+        var presenter = Instantiate(item.Prefab);
+        presenter.transform.position = position;
 
-            ejectedItem.AddComponent<MovingAlongCurve>().StartMoving(
-                position, 
-                target, 
-                Vector3.Lerp(position, target, 0.5f) + new Vector3(0, 2, 0), 
-                1
-            ).RemoveWhenFinished();
-        }
-        else
+        Vector3 target = position;
+
+        if (_ground != null)
         {
-            Debug.LogWarning($"Item {item.Name} does not have a prefab assigned.");
+            target = _ground.bounds.ClosestPoint(target);
         }
+
+        // Устанавливаем начальную и конечную позицию для перемещения
+        presenter.gameObject
+            .AddComponent<MovingAlongCurve>()
+            .StartMoving(position, target, Vector3.Lerp(position, target, 0.5f) + new Vector3(0, 2, 0), 1)
+            .RemoveWhenFinished();
     }
 }
        

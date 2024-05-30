@@ -51,4 +51,19 @@ public class Inventory : MonoBehaviour
         }
         );
     }
+    
+    private Vector3 GetMouseWorldPosition()
+    {
+        Vector3 mousePosition = Input.mousePosition;
+        Ray ray = Camera.main.ScreenPointToRay(mousePosition);
+        Plane groundPlane = new Plane(Vector3.up, Vector3.zero); // Плоскость на уровне y = 0
+        float distance;
+
+        if (groundPlane.Raycast(ray, out distance))
+        {
+            return ray.GetPoint(distance);
+        }
+
+        return mousePosition; // Фолбэк, если рейкаст не сработает
+    }
 }

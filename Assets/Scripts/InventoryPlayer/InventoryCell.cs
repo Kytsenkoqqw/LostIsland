@@ -12,30 +12,30 @@ using UnityEngine.UI;
 
 public class InventoryCell : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    public event Action Ejecting;
-    private AssetItem _item;
+   public event Action Ejecting;
     [SerializeField] private TMP_Text _nameField;
     [SerializeField] private Image _iconField;
 
     private Transform _draggingParent;
     private Transform _originalParent;
+    private AssetItem _item;
 
     public void Init(Transform draggingParent)
     {
         _draggingParent = draggingParent;
         _originalParent = transform.parent;
-    }
-
-    public void Render(AssetItem item)
+    } 
+    
+    public void Render(IItem item)
     {
-        _item = item;
         _nameField.text = item.Name;
         _iconField.sprite = item.UIIcon;
+        _item = (AssetItem)item; // Сохраняем ссылку на предмет для дальнейшего использования
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        transform.parent = _draggingParent;
+        transform.SetParent(_draggingParent, false); // Устанавливаем родителя без сохранения мировой позиции
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -69,7 +69,8 @@ public class InventoryCell : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         ItemsEjector ejector = FindObjectOfType<ItemsEjector>();
         if (ejector != null)
         {
-            ejector.EjectFromPool(_item, _originalParent.position, Vector3.right);
+            Vector3 mouseWorldPosition = GetMouseWorldPosition();
+            ejector.EjectFromPool(_item, mouseWorldPosition, Vector3.right); // Передаем позицию мыши
         }
     }
 
@@ -84,7 +85,23 @@ public class InventoryCell : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             }
         }
 
-        transform.parent = _originalParent;
+        transform.SetParent(_originalParent, false); // Устанавливаем родителя без сохранения мировой позиции
         transform.SetSiblingIndex(closestIndex);
+    }
+
+    // Метод для получения позиции мира из позиции мыши
+    private Vector3 GetMouseWorldPosition()
+    {
+        Vector3 mousePosition = Input.mousePosition;
+        Ray ray = Camera.main.ScreenPointToRay(mousePosition);
+        Plane groundPlane = new Plane(Vector3.up, Vector3.zero); // Плоскость на уровне y = 0
+        float distance;
+
+        if (groundPlane.Raycast(ray, out distance))
+        {
+            return ray.GetPoint(distance);
+        }
+
+        return mousePosition; // Фолбэк, если рейкаст не сработает
     }
 }

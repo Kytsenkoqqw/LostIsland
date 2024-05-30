@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Log
   _uiIcon: {fileID: 21300000, guid: 7c66355d5c6b208488bd49aa0216b369, type: 3}
+  _prefab: {fileID: 5908477514278511380, guid: e2a37efa02dcebe4bb0ecd876daec91b, type: 3}

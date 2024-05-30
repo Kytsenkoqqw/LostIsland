@@ -77,13 +77,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/MovingAloveCurve.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/MovingAlongCurve.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/PickUp.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/InventoryCell.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/IItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemScenePresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/AssetItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemsObjectPool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/AssetItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemsEjector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/InventoryCell.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Inventory.cs" />
       </list>
     </option>
   </component>
@@ -168,7 +168,8 @@
       <workItem from="1716903544796" duration="1315000" />
       <workItem from="1716984627751" duration="2659000" />
       <workItem from="1716987460477" duration="2961000" />
-      <workItem from="1717025903051" duration="791000" />
+      <workItem from="1717025903051" duration="1198000" />
+      <workItem from="1717066504726" duration="5117000" />
     </task>
     <servers />
   </component>
