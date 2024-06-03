@@ -13,7 +13,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] private InventoryCell _inventoryCellTemplate;
     [SerializeField] private Transform _container;
     [SerializeField] private Transform _draggingParent;
-    //[SerializeField] private ItemsEjector _ejector;
+    [SerializeField] private ItemsEjector _ejector;
 
     public void Awake()
     {
@@ -25,13 +25,26 @@ public class Inventory : MonoBehaviour
 
     public void OnEnable()
     {
-        // Render(Items);
+        Render(Items);
     }
 
     public void AddItem(AssetItem item)
     {
         Items.Add(item);
         Render(Items);
+    }
+
+    public void RemoveItem(AssetItem item)
+    {
+        if (Items.Contains(item))
+        {
+            Items.Remove(item);
+            Debug.Log("Removed item from inventory: " + item.Name);
+        }
+        else
+        {
+            Debug.LogWarning("Item not found in inventory: " + item.Name);
+        }
     }
 
     public void Render(List<AssetItem> items)
@@ -41,13 +54,12 @@ public class Inventory : MonoBehaviour
             Destroy(child.gameObject);
         }
         
-        Debug.Log("Rendering inventory with " + items.Count + " items.");
-        
         items.ForEach(item => 
         {
             var cell = Instantiate(_inventoryCellTemplate, _container);
             cell.Init(_draggingParent);
             cell.Render(item);
+            cell.Ejecting += () => RemoveItem(item);
             cell.Ejecting += () => Destroy(cell.gameObject);
         }
         );
