@@ -30,12 +30,12 @@ public class InventoryCell : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         _nameField.text = item.Name;
         _iconField.sprite = item.UIIcon;
-        _item = (AssetItem)item; // Сохраняем ссылку на предмет для дальнейшего использования
+        _item = (AssetItem)item; 
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        transform.SetParent(_draggingParent, false); // Устанавливаем родителя без сохранения мировой позиции
+        transform.SetParent(_draggingParent, false); 
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -70,7 +70,7 @@ public class InventoryCell : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         if (ejector != null)
         {
             Vector3 mouseWorldPosition = GetMouseWorldPosition();
-            ejector.EjectFromPool(_item, mouseWorldPosition, Vector3.right); // Передаем позицию мыши
+            ejector.EjectFromPool(_item, mouseWorldPosition, Vector3.right);
         }
     }
 
@@ -85,16 +85,16 @@ public class InventoryCell : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             }
         }
 
-        transform.SetParent(_originalParent, false); // Устанавливаем родителя без сохранения мировой позиции
+        transform.SetParent(_originalParent, false); 
         transform.SetSiblingIndex(closestIndex);
     }
 
-    // Метод для получения позиции мира из позиции мыши
+   
     private Vector3 GetMouseWorldPosition()
     {
         Vector3 mousePosition = Input.mousePosition;
         Ray ray = Camera.main.ScreenPointToRay(mousePosition);
-        Plane groundPlane = new Plane(Vector3.up, Vector3.zero); // Плоскость на уровне y = 0
+        Plane groundPlane = new Plane(Vector3.up, Vector3.zero); 
         float distance;
 
         if (groundPlane.Raycast(ray, out distance))
@@ -102,6 +102,6 @@ public class InventoryCell : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             return ray.GetPoint(distance);
         }
 
-        return mousePosition; // Фолбэк, если рейкаст не сработает
+        return mousePosition; 
     }
 }

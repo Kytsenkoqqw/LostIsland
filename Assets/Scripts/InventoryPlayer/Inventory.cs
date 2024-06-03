@@ -13,7 +13,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] private InventoryCell _inventoryCellTemplate;
     [SerializeField] private Transform _container;
     [SerializeField] private Transform _draggingParent;
-    [SerializeField] private ItemsEjector _ejector;
+    //[SerializeField] private ItemsEjector _ejector;
 
     public void Awake()
     {
@@ -25,7 +25,7 @@ public class Inventory : MonoBehaviour
 
     public void OnEnable()
     {
-        Render(Items);
+        // Render(Items);
     }
 
     public void AddItem(AssetItem item)
@@ -41,29 +41,15 @@ public class Inventory : MonoBehaviour
             Destroy(child.gameObject);
         }
         
+        Debug.Log("Rendering inventory with " + items.Count + " items.");
+        
         items.ForEach(item => 
         {
             var cell = Instantiate(_inventoryCellTemplate, _container);
             cell.Init(_draggingParent);
             cell.Render(item);
             cell.Ejecting += () => Destroy(cell.gameObject);
-            cell.Ejecting += () => _ejector.EjectFromPool(item, _ejector.transform.position, _ejector.transform.right);
         }
         );
-    }
-    
-    private Vector3 GetMouseWorldPosition()
-    {
-        Vector3 mousePosition = Input.mousePosition;
-        Ray ray = Camera.main.ScreenPointToRay(mousePosition);
-        Plane groundPlane = new Plane(Vector3.up, Vector3.zero); // Плоскость на уровне y = 0
-        float distance;
-
-        if (groundPlane.Raycast(ray, out distance))
-        {
-            return ray.GetPoint(distance);
-        }
-
-        return mousePosition; // Фолбэк, если рейкаст не сработает
     }
 }

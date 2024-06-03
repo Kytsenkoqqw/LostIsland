@@ -65,7 +65,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ChestAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tree/ChoppingWoodSound.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Chest/OpenChest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/PickupItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/PlayerInventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" />
@@ -79,8 +78,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/PickUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/IItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemScenePresenter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemsObjectPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/AssetItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Chest/OpenChest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemsObjectPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemsEjector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/InventoryCell.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Inventory.cs" />
@@ -169,7 +169,9 @@
       <workItem from="1716984627751" duration="2659000" />
       <workItem from="1716987460477" duration="2961000" />
       <workItem from="1717025903051" duration="1198000" />
-      <workItem from="1717066504726" duration="5117000" />
+      <workItem from="1717066504726" duration="6573000" />
+      <workItem from="1717333213790" duration="621000" />
+      <workItem from="1717415511452" duration="2966000" />
     </task>
     <servers />
   </component>

@@ -39,7 +39,6 @@ public class OpenChest : MonoBehaviour
             _animator.SetTrigger(ClosedChest);
             GameManager.instance.ClosedInventoryChest();
             _openChestButton.SetActive(false);
-            
         }
     }
 
