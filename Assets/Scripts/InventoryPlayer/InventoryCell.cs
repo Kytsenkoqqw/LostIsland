@@ -94,14 +94,24 @@ public class InventoryCell : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         Vector3 mousePosition = Input.mousePosition;
         Ray ray = Camera.main.ScreenPointToRay(mousePosition);
-        Plane groundPlane = new Plane(Vector3.up, Vector3.zero); 
-        float distance;
 
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
+        {
+            Vector3 adjustedPosition = hit.point;
+            adjustedPosition.y -= 0.5f;  
+            return adjustedPosition;
+        }
+
+        // Если raycast не попал никуда, вернем точку на плоскости
+        Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
+        float distance;
         if (groundPlane.Raycast(ray, out distance))
         {
             return ray.GetPoint(distance);
         }
 
-        return mousePosition; 
+        // Если все остальное не сработало, вернем позицию мыши в мировых координатах
+        return Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, Camera.main.nearClipPlane));
     }
 }

@@ -31,6 +31,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/ChestButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tree/TreeDestroy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChestInventory/InventoryChest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
@@ -59,7 +60,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Teleport/Teleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/ChestButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tree/TreeDestroy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuManager/ManuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
@@ -81,9 +81,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/AssetItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/OpenChest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemsObjectPool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ChestInventory/InventoryChest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemCollector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemsEjector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/InventoryCell.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NPC/CheckItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/InventoryCell.cs" />
       </list>
     </option>
   </component>
@@ -171,7 +175,10 @@
       <workItem from="1717025903051" duration="1198000" />
       <workItem from="1717066504726" duration="6573000" />
       <workItem from="1717333213790" duration="621000" />
-      <workItem from="1717415511452" duration="5857000" />
+      <workItem from="1717415511452" duration="7228000" />
+      <workItem from="1717503945029" duration="4794000" />
+      <workItem from="1717709387196" duration="38000" />
+      <workItem from="1717724345174" duration="2176000" />
     </task>
     <servers />
   </component>

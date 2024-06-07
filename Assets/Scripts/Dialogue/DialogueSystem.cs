@@ -8,24 +8,32 @@ using UnityEngine;
 public class DialogueSystem : MonoBehaviour
 {
     [SerializeField] private GameObject _dailogPanel;
+    [SerializeField] private TextMeshProUGUI _dialogText;
     [SerializeField] private string[] _lines;
     [SerializeField] private float _speedText;
-    [SerializeField] private TextMeshProUGUI _dialogText;
+    
 
-    public int index;
+    private int _index;
 
    
     private void Start () 
     {
         _dailogPanel.SetActive(false);  
-        index = 0;
+        _index = 0;
+    }
+    
+    public void ShowMessage(string[] lines)
+    {
+        _lines = lines;
+        _index = 0;
+        _dailogPanel.SetActive(true);
+        StartDialog();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.GetComponent<PlayerController>())
         {
-            Debug.Log("Bob");
             _dailogPanel.SetActive(true);
             StartDialog();
         }
@@ -49,7 +57,7 @@ public class DialogueSystem : MonoBehaviour
 	
     IEnumerator TypeLine()
     {
-        foreach (char c  in _lines[index].ToCharArray()) 
+        foreach (char c  in _lines[_index].ToCharArray()) 
         {
             _dialogText.text += c;
             yield return new WaitForSeconds (_speedText);
@@ -58,26 +66,26 @@ public class DialogueSystem : MonoBehaviour
 
     public void scipTextClick()
     {
-        if (_dialogText.text == _lines [index]) {
+        if (_dialogText.text == _lines [_index]) {
             NextLines ();
         } 
         else
         {
             StopAllCoroutines ();
-            _dialogText.text = _lines [index];
+            _dialogText.text = _lines [_index];
         }
     }
 
     public void NextLines()
     {
-        if (index < _lines.Length - 1) 
+        if (_index < _lines.Length - 1) 
         {
-            index++;
+            _index++;
             StartDialog ();
         } 
         else 
         {
-            index=0;
+            _index=0;
             StartDialog ();
         }
     }

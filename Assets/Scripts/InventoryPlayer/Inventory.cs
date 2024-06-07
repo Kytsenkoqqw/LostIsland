@@ -47,6 +47,20 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public int GetItemCount(string itemName)
+    {
+        int count = 0;
+        foreach (var item in Items)
+        {
+            if (item.Name  == itemName)
+            {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
     public void Render(List<AssetItem> items)
     {
         foreach (Transform child in _container)
