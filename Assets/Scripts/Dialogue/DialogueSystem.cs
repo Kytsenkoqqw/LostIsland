@@ -5,6 +5,7 @@ using Item;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueSystem : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private float _speedText;
     [SerializeField] private AssetItem requiredItem;
     [SerializeField] private int requiredItemCount;
+    [SerializeField] private GameObject _acceptButton;
+    [SerializeField] private GameObject _declineButton;
 
     private int _index;
 
@@ -33,11 +36,13 @@ public class DialogueSystem : MonoBehaviour
                 string[] lines;
                 if (inventory.HasItem(requiredItem, requiredItemCount))
                 {
-                    lines = new string[] { "Отлчно! Вижу у тебя есть нужное колличество дерева"};
+                    lines = new string[] { "У тебя есть нужное колличество дерева?"};
                 }
                 else
                 {
-                    lines = new string[] { "Привет! Тут корабль сломан", "Что бы починть его, нужно добыть немного дерева!" };
+                    lines = new string[] { "Привет! Тут корабль сломан", "Что бы починть его, нужно добыть немного дерева!", "У тебя есть нужное колличество дерева?" };
+                    _acceptButton.SetActive(true);
+                    _declineButton.SetActive(true);
                 }
 
                 _dialogPanel.SetActive(true);
@@ -106,6 +111,30 @@ public class DialogueSystem : MonoBehaviour
         {
             _index = 0;
             _dialogPanel.SetActive(false);
+        }
+    }
+    
+    public void OnAcceptButtonClicked()
+    {
+        // Действия при нажатии на кнопку "Принять"
+        // Например, продолжение диалога или выполнение каких-то действий
+        StartCoroutine(TypeLineCoroutine("О да! Я вижу что у тебя есть нужное количество дерева!"));
+    }
+
+    public void OnDeclineButtonClicked()
+    {
+        // Действия при нажатии на кнопку "Отклонить"
+        // Например, завершение диалога или отмена каких-то действий
+        StartCoroutine(TypeLineCoroutine("Ну тогда тебе надо поработать!"));
+    }
+
+    IEnumerator TypeLineCoroutine(string line)
+    {
+        _dialogText.text = string.Empty;
+        foreach (char c in line.ToCharArray())
+        {
+            _dialogText.text += c;
+            yield return new WaitForSeconds(_speedText);
         }
     }
 }

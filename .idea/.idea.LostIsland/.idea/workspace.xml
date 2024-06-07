@@ -88,6 +88,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/InventoryCell.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/PickUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueChoice.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" />
       </list>
     </option>
@@ -180,7 +181,8 @@
       <workItem from="1717503945029" duration="4794000" />
       <workItem from="1717709387196" duration="38000" />
       <workItem from="1717724345174" duration="2313000" />
-      <workItem from="1717758713865" duration="4279000" />
+      <workItem from="1717758713865" duration="4873000" />
+      <workItem from="1717779839760" duration="5239000" />
     </task>
     <servers />
   </component>
@@ -206,9 +208,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1716637679657" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1715872756997">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1717782755847">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1715872756997" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1717782755847" />
   </component>
 </project>
