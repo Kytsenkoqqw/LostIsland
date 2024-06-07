@@ -28,14 +28,24 @@ public class DialogueSystem : MonoBehaviour
         if (collision.gameObject.GetComponent<PlayerController>())
         {
             Inventory inventory = FindObjectOfType<Inventory>(true);
-            if (inventory != null && inventory.HasItem(requiredItem, requiredItemCount))
+            if (inventory != null)
             {
+                string[] lines;
+                if (inventory.HasItem(requiredItem, requiredItemCount))
+                {
+                    lines = new string[] { "Отлчно! Вижу у тебя есть нужное колличество дерева"};
+                }
+                else
+                {
+                    lines = new string[] { "Привет! Тут корабль сломан", "Что бы починть его, нужно добыть немного дерева!" };
+                }
+
                 _dialogPanel.SetActive(true);
-                StartDialog();
+                ShowMessage(lines);
             }
             else
             {
-                Debug.Log("Not enough items in inventory.");
+                Debug.LogWarning("Inventory not found.");
             }
         }
     }
