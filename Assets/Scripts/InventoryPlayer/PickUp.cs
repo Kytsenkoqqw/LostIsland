@@ -11,7 +11,7 @@ namespace InventoryPlayer
         {
             if (collision.gameObject.CompareTag("Player"))
             {
-                Inventory inventory = Inventory.instance;
+                Inventory inventory = FindObjectOfType<Inventory>(true);
                 if (inventory != null)
                 {
                     inventory.AddItem(item);

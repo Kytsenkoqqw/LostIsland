@@ -59,7 +59,6 @@
         <option value="$PROJECT_DIR$/Assets/Shader/TeleportShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Teleport/Teleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/ChestButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tree/TreeDestroy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuManager/ManuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
@@ -75,7 +74,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/InterfaceInventory/IEndDragHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/MovingAloveCurve.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/MovingAlongCurve.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/PickUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/IItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemScenePresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/AssetItem.cs" />
@@ -84,10 +82,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ChestInventory/InventoryChest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemCollector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemsEjector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NPC/CheckItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/InventoryManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/InventoryCell.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/PickUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/NPC/CheckItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/InventoryCell.cs" />
       </list>
     </option>
   </component>
@@ -178,7 +179,8 @@
       <workItem from="1717415511452" duration="7228000" />
       <workItem from="1717503945029" duration="4794000" />
       <workItem from="1717709387196" duration="38000" />
-      <workItem from="1717724345174" duration="2176000" />
+      <workItem from="1717724345174" duration="2313000" />
+      <workItem from="1717758713865" duration="2368000" />
     </task>
     <servers />
   </component>

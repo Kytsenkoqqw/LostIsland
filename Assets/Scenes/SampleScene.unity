@@ -1080,7 +1080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdee53826df97ad47ad4790fed590561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dailogPanel: {fileID: 91508426}
+  _dialogPanel: {fileID: 2057199179}
   _dialogText: {fileID: 4569989}
   _lines:
   - "\u041F\u0440\u0438\u0432\u0435\u0442! "
@@ -1089,6 +1089,8 @@ MonoBehaviour:
     \u0435\u0433\u043E \u043D\u0443\u0436\u043D\u043E \u0434\u043E\u0431\u044B\u0442\u044C
     \u043D\u0435\u043C\u043D\u043E\u0433\u043E \u0434\u0435\u0440\u0435\u0432\u0430"
   _speedText: 0.06
+  requiredItem: {fileID: 11400000, guid: 3faeda23051b65842adf16ab45b08448, type: 2}
+  requiredItemCount: 3
 --- !u!65 &311181646
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2737,7 +2739,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 311181645}
         m_TargetAssemblyTypeName: DialogueSystem, Assembly-CSharp
-        m_MethodName: scipTextClick
+        m_MethodName: SkipTextClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

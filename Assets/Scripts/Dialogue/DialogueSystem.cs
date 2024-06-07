@@ -1,41 +1,42 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Item;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class DialogueSystem : MonoBehaviour
 {
-    [SerializeField] private GameObject _dailogPanel;
+    [SerializeField] private GameObject _dialogPanel;
     [SerializeField] private TextMeshProUGUI _dialogText;
     [SerializeField] private string[] _lines;
     [SerializeField] private float _speedText;
-    
+    [SerializeField] private AssetItem requiredItem;
+    [SerializeField] private int requiredItemCount;
 
     private int _index;
 
-   
-    private void Start () 
+    private void Start()
     {
-        _dailogPanel.SetActive(false);  
+        _dialogPanel.SetActive(false);
         _index = 0;
-    }
-    
-    public void ShowMessage(string[] lines)
-    {
-        _lines = lines;
-        _index = 0;
-        _dailogPanel.SetActive(true);
-        StartDialog();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.GetComponent<PlayerController>())
         {
-            _dailogPanel.SetActive(true);
-            StartDialog();
+            Inventory inventory = FindObjectOfType<Inventory>(true);
+            if (inventory != null && inventory.HasItem(requiredItem, requiredItemCount))
+            {
+                _dialogPanel.SetActive(true);
+                StartDialog();
+            }
+            else
+            {
+                Debug.Log("Not enough items in inventory.");
+            }
         }
     }
 
@@ -43,51 +44,58 @@ public class DialogueSystem : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<PlayerController>())
         {
-            _dailogPanel.SetActive(false);
+            _dialogPanel.SetActive(false);
             StopAllCoroutines();
         }
-        
+    }
+
+    public void ShowMessage(string[] lines)
+    {
+        _lines = lines;
+        _index = 0;
+        _dialogPanel.SetActive(true);
+        StartDialog();
     }
 
     void StartDialog()
     {
         _dialogText.text = string.Empty;
-        StartCoroutine (TypeLine ());
+        StartCoroutine(TypeLine());
     }
-	
+
     IEnumerator TypeLine()
     {
-        foreach (char c  in _lines[_index].ToCharArray()) 
+        foreach (char c in _lines[_index].ToCharArray())
         {
             _dialogText.text += c;
-            yield return new WaitForSeconds (_speedText);
+            yield return new WaitForSeconds(_speedText);
         }
     }
 
-    public void scipTextClick()
+    public void SkipTextClick()
     {
-        if (_dialogText.text == _lines [_index]) {
-            NextLines ();
-        } 
+        if (_dialogText.text == _lines[_index])
+        {
+            NextLines();
+        }
         else
         {
-            StopAllCoroutines ();
-            _dialogText.text = _lines [_index];
+            StopAllCoroutines();
+            _dialogText.text = _lines[_index];
         }
     }
 
     public void NextLines()
     {
-        if (_index < _lines.Length - 1) 
+        if (_index < _lines.Length - 1)
         {
             _index++;
-            StartDialog ();
-        } 
-        else 
+            StartDialog();
+        }
+        else
         {
-            _index=0;
-            StartDialog ();
+            _index = 0;
+            _dialogPanel.SetActive(false);
         }
     }
 }
-

@@ -47,18 +47,17 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public int GetItemCount(string itemName)
+    public bool HasItem(AssetItem item, int count)
     {
-        int count = 0;
-        foreach (var item in Items)
+        int itemCount = 0;
+        foreach (var i in Items)
         {
-            if (item.Name  == itemName)
+            if (i == item)
             {
-                count++;
+                itemCount++;
             }
         }
-
-        return count;
+        return itemCount >= count;
     }
 
     public void Render(List<AssetItem> items)
