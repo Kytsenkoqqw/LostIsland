@@ -17,6 +17,9 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private int requiredItemCount;
     [SerializeField] private GameObject _acceptButton;
     [SerializeField] private GameObject _declineButton;
+    [SerializeField] private GameObject _buildShipPanel;
+    [SerializeField] private GameObject _shipPrefab;
+    [SerializeField] private Transform _shipSpawnPoint;
 
     private int _index;
 
@@ -40,9 +43,7 @@ public class DialogueSystem : MonoBehaviour
                 }
                 else
                 {
-                    lines = new string[] { "Привет! Тут корабль сломан", "Что бы починть его, нужно добыть немного дерева!", "У тебя есть нужное колличество дерева?" };
-                    _acceptButton.SetActive(true);
-                    _declineButton.SetActive(true);
+                    lines = new string[] { "Привет! Тут корабль сломан! Что бы починть его, нужно добыть немного дерева! У тебя есть нужное колличество дерева?" };
                 }
 
                 _dialogPanel.SetActive(true);
@@ -116,9 +117,17 @@ public class DialogueSystem : MonoBehaviour
     
     public void OnAcceptButtonClicked()
     {
-        // Действия при нажатии на кнопку "Принять"
-        // Например, продолжение диалога или выполнение каких-то действий
-        StartCoroutine(TypeLineCoroutine("О да! Я вижу что у тебя есть нужное количество дерева!"));
+        Inventory inventory = FindObjectOfType<Inventory>(true);
+        if (inventory.HasItem(requiredItem, requiredItemCount))
+        {
+            StartCoroutine(TypeLineCoroutine("О да! Я вижу что у тебя есть нужное количество дерева!"));
+            StartCoroutine(ShowBuildShipPanel());
+        }
+        else
+        {
+            StartCoroutine(TypeLineCoroutine("У тебя все еще нету нужного колличества дерева!"));
+        }
+        
     }
 
     public void OnDeclineButtonClicked()
@@ -126,6 +135,7 @@ public class DialogueSystem : MonoBehaviour
         // Действия при нажатии на кнопку "Отклонить"
         // Например, завершение диалога или отмена каких-то действий
         StartCoroutine(TypeLineCoroutine("Ну тогда тебе надо поработать!"));
+        //_acceptButton.GetComponent<Button>().interactable = false;
     }
 
     IEnumerator TypeLineCoroutine(string line)
@@ -136,5 +146,21 @@ public class DialogueSystem : MonoBehaviour
             _dialogText.text += c;
             yield return new WaitForSeconds(_speedText);
         }
+    }
+
+    IEnumerator ShowBuildShipPanel()
+    {
+        yield return new WaitForSeconds(2f);
+        _buildShipPanel.SetActive(true);
+    }
+
+    public void ShipAccetpButton()
+    {
+        Instantiate(_shipPrefab, _shipSpawnPoint);
+    }
+
+    public void ShipDeclineButton()
+    {
+        _buildShipPanel.SetActive(false);
     }
 }
