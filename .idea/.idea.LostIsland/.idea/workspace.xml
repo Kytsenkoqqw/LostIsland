@@ -57,7 +57,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/IShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadScreen/LoadScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/Shader/TeleportShader.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Teleport/Teleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/ChestButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tree/TreeDestroy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuManager/ManuManager.cs" />
@@ -89,7 +88,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/PickUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueChoice.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Teleport/Teleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Teleport/EntranceOnShip.cs" />
       </list>
     </option>
   </component>
@@ -183,7 +184,7 @@
       <workItem from="1717724345174" duration="2313000" />
       <workItem from="1717758713865" duration="4873000" />
       <workItem from="1717779839760" duration="5524000" />
-      <workItem from="1717842232615" duration="4052000" />
+      <workItem from="1717842232615" duration="6939000" />
     </task>
     <servers />
   </component>

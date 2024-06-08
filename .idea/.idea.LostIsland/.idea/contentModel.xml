@@ -20,6 +20,13 @@
               <e p="AQUAS-Lite_Frontface.shader" t="Include" />
             </e>
           </e>
+          <e p="Hovl Studio" t="Include">
+            <e p="Magic effects pack" t="Include">
+              <e p="Demo scene" t="Include">
+                <e p="Readme.txt" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Joystick Pack" t="Include">
             <e p="Examples" t="Include">
               <e p="JoystickPlayerExample.cs" t="Include" />
@@ -103,7 +110,7 @@
             <e p="PlayerController.cs" t="Include" />
           </e>
           <e p="Teleport" t="Include">
-            <e p="Teleport.cs" t="Include" />
+            <e p="EntranceOnShip.cs" t="Include" />
           </e>
           <e p="Tree" t="Include">
             <e p="ChoppingWoodSound.cs" t="Include" />
