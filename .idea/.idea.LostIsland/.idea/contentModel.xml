@@ -109,6 +109,9 @@
             <e p="PlayerAnimation.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
           </e>
+          <e p="Ship" t="Include">
+            <e p="ShowButtonTravel.cs" t="Include" />
+          </e>
           <e p="Teleport" t="Include">
             <e p="EntranceOnShip.cs" t="Include" />
           </e>

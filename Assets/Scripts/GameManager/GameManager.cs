@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _closedButtonInventory;
     [SerializeField] private GameObject _openInventoryButton;
     [SerializeField] private GameObject _inventoryPlayer;
+    [SerializeField] private GameObject _worldMap;
     private bool _openChest = false;
 
     public void Awake()
@@ -92,5 +93,10 @@ public class GameManager : MonoBehaviour
     public void ClosedInventoryPlayer()
     {
         _inventoryPlayer.SetActive(false);
+    }
+
+    public void ShowWorldMap()
+    {
+        _worldMap.SetActive(true);
     }
 }
