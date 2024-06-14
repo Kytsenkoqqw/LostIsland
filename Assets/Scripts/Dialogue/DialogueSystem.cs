@@ -158,7 +158,7 @@ public class DialogueSystem : MonoBehaviour
     {
         var ship = Instantiate(_shipPrefab, _shipSpawnPoint);
         _buildShipPanel.SetActive(false);
-        EntranceOnShip.instance.ShowEntrancePoint();
+        Travel.instance.ShowEntrancePoint();
     }
 
     public void ShipDeclineButton()

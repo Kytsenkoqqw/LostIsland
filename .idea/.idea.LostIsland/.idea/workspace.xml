@@ -29,22 +29,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/ChestButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tree/TreeDestroy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ship/ShowButtonTravel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChestInventory/InventoryChest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ship/ShowButtonTravel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MenuManager/ManuManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/ChestButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/IItem.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ChestOpentrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ChestOpener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ChestOpenTrigger.cs" />
@@ -90,10 +89,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueChoice.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Teleport/Teleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Teleport/EntranceOnShip.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ship/Travel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ship/ShowButtonTravel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Teleport/EntranceOnShip.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Teleport/Travel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Travel/Travel.cs" />
       </list>
     </option>
   </component>
@@ -189,6 +190,7 @@
       <workItem from="1717779839760" duration="5524000" />
       <workItem from="1717842232615" duration="8165000" />
       <workItem from="1718023207404" duration="1688000" />
+      <workItem from="1718377680325" duration="1506000" />
     </task>
     <servers />
   </component>
