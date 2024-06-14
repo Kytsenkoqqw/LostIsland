@@ -65,15 +65,7 @@ public class Travel : MonoBehaviour
         _worldMap.SetActive(false);
     }
 
-    public void ShowEntrancePoint()
-    {
-        if (_worldMapPoint != null)
-        {
-            _worldMapPoint.SetActive(true);
-        }
-    }
-    
-     IEnumerator TravelProcess()
+    IEnumerator TravelProcess()
     {
         yield return new WaitForSeconds(1f);
         _loadScreen.SetActive(false);

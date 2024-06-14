@@ -20,6 +20,7 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private GameObject _buildShipPanel;
     [SerializeField] private GameObject _shipPrefab;
     [SerializeField] private Transform _shipSpawnPoint;
+    [SerializeField] private GameObject _worldMapPoint;
 
     private int _index;
 
@@ -158,7 +159,7 @@ public class DialogueSystem : MonoBehaviour
     {
         var ship = Instantiate(_shipPrefab, _shipSpawnPoint);
         _buildShipPanel.SetActive(false);
-        Travel.instance.ShowEntrancePoint();
+        _worldMapPoint.SetActive(true);
     }
 
     public void ShipDeclineButton()

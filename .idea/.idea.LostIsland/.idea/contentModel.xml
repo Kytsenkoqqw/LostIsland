@@ -63,6 +63,9 @@
             <e p="Readme.txt" t="Include" />
           </e>
         </e>
+        <e p="LoadScreen" t="Include">
+          <e p="LoadScreen.cs" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="Button" t="Include">
             <e p="ChestButton.cs" t="Include" />
