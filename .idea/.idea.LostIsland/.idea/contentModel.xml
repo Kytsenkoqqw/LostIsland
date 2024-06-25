@@ -81,6 +81,9 @@
           <e p="ChestInventory" t="Include">
             <e p="InventoryChest.cs" t="Include" />
           </e>
+          <e p="DayTime" t="Include">
+            <e p="DayTime.cs" t="Include" />
+          </e>
           <e p="Dialogue" t="Include">
             <e p="DialogueSystem.cs" t="Include" />
           </e>
