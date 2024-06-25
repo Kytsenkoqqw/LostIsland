@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteInEditMode]
 public class DayTime : MonoBehaviour
 {
    [SerializeField] private Gradient _directionalLightGradient;
@@ -16,21 +15,26 @@ public class DayTime : MonoBehaviour
 
    private Vector3 _defaultAngles;
 
-   void Start() => _defaultAngles = _dirLight.transform.localEulerAngles;
+   void Start()
+   {
+      _defaultAngles = _dirLight.transform.localEulerAngles;
+   }
 
    private void Update()
    {
       if (Application.isPlaying)
       {
          _timeProgress += Time.deltaTime / _timeDayInSeconds;
+
+         if (_timeProgress > 1f)
+         {
+            _timeProgress = 0f;
+         }
       }
-      
-      if (_timeProgress > 1f)
-      {
-         _timeProgress = 0f;
-         _dirLight.color = _directionalLightGradient.Evaluate(_timeProgress);
-         RenderSettings.ambientLight = _ambientLightGradient.Evaluate(_timeProgress);
-         _dirLight.transform.localEulerAngles = new Vector3(360f * _timeProgress - 90, _defaultAngles.x, _defaultAngles.z);
-      }
+
+      // Обновление цвета и положения света
+      _dirLight.color = _directionalLightGradient.Evaluate(_timeProgress);
+      RenderSettings.ambientLight = _ambientLightGradient.Evaluate(_timeProgress);
+      _dirLight.transform.localEulerAngles = new Vector3(360f * _timeProgress - 90, _defaultAngles.y, _defaultAngles.z);
    }
 }
