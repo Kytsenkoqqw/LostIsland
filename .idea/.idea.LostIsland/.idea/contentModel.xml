@@ -118,6 +118,9 @@
           <e p="Ship" t="Include">
             <e p="ShowButtonTravel.cs" t="Include" />
           </e>
+          <e p="State" t="Include">
+            <e p="PlayerState.cs" t="Include" />
+          </e>
           <e p="Travel" t="Include">
             <e p="Travel.cs" t="Include" />
           </e>

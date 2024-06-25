@@ -6771,7 +6771,7 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  _timeDayInSeconds: 10
+  _timeDayInSeconds: 30
   _timeProgress: 0
   _dirLight: {fileID: 656901635}
 --- !u!4 &1335832825
