@@ -10,7 +10,7 @@ namespace State
         [SerializeField] private float _healthLossRate = 0.01f;
         public override void EnterState(PlayerStateManager player)
         {
-            Debug.Log("Player is now Hungry");
+            
         }
 
         public override void UpdateState(PlayerStateManager player)
@@ -19,7 +19,7 @@ namespace State
 
             if (_hpIndicator.fillAmount <= 0)
             {
-                Debug.Log("Player has died of hunger");
+               
             }
 
             if (_foodIndicator.fillAmount >= 0.7f)
@@ -30,7 +30,7 @@ namespace State
 
         public override void ExitState(PlayerStateManager player)
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }

@@ -1534,7 +1534,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.705
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -2957,6 +2957,101 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762a3f9a1bf292940bf6e37501a9c905, type: 3}
+--- !u!1 &565731308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 565731313}
+  - component: {fileID: 565731312}
+  - component: {fileID: 565731311}
+  - component: {fileID: 565731310}
+  - component: {fileID: 565731309}
+  m_Layer: 0
+  m_Name: StateManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &565731309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565731308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 704d3cea14e0424a9b27e2373a9b8605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HungryState: {fileID: 565731310}
+  SleepyState: {fileID: 565731312}
+  NormalState: {fileID: 565731311}
+--- !u!114 &565731310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565731308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004a77e9e2744bed9330e2b0ba4ffe0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hpIndicator: {fileID: 226003891}
+  _foodIndicator: {fileID: 298325325}
+  _healthLossRate: 0.01
+--- !u!114 &565731311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565731308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e7dada404a84218a9d81b92ab7cbdd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hpIndicator: {fileID: 226003891}
+  _foodIndicator: {fileID: 298325325}
+  _speelIndicator: {fileID: 682166642}
+--- !u!114 &565731312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565731308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f3871d169a645709f830971aaab25bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sleepIndicator: {fileID: 682166642}
+  _normalSpeed: 5
+  _reducedSpeed: 2
+--- !u!4 &565731313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565731308}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1565.2935, y: 154.49167, z: -166.1683}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &578097749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8145,6 +8240,7 @@ GameObject:
   - component: {fileID: 1618101908}
   - component: {fileID: 1618101910}
   - component: {fileID: 1618101909}
+  - component: {fileID: 1618101911}
   m_Layer: 5
   m_Name: Indicators
   m_TagString: Untagged
@@ -8212,6 +8308,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618101907}
   m_CullTransparentMesh: 1
+--- !u!114 &1618101911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618101907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551ed7157da147649ac9cde805f780c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hpIndicator: {fileID: 226003891}
+  _foodIndicator: {fileID: 298325325}
+  _sleepIndicator: {fileID: 682166642}
+  _foodDecreaseRate: 0.01
+  _sleepDecreaseRate: 0.01
 --- !u!1001 &1664991038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9250,88 +9363,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880693917}
   m_CullTransparentMesh: 1
---- !u!1 &1887572536 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8999517870217588064, guid: 6ff873596be37954ba0a33086af31087, type: 3}
-  m_PrefabInstance: {fileID: 1931176155007979172}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1887572545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1887572536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 704d3cea14e0424a9b27e2373a9b8605, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HungryState: {fileID: 1887572547}
-  SleepyState: {fileID: 1887572548}
-  NormalState: {fileID: 1887572549}
---- !u!114 &1887572546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1887572536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 551ed7157da147649ac9cde805f780c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hpIndicator: {fileID: 226003891}
-  _foodIndicator: {fileID: 298325325}
-  _sleepIndicator: {fileID: 682166642}
-  _foodDecreaseRate: 0.01
-  _sleepDecreaseRate: 0.01
---- !u!114 &1887572547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1887572536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 004a77e9e2744bed9330e2b0ba4ffe0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hpIndicator: {fileID: 226003891}
-  _foodIndicator: {fileID: 298325325}
-  _healthLossRate: 0.01
---- !u!114 &1887572548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1887572536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3871d169a645709f830971aaab25bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sleepIndicator: {fileID: 682166642}
-  _normalSpeed: 5
-  _reducedSpeed: 2
---- !u!114 &1887572549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1887572536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e7dada404a84218a9d81b92ab7cbdd6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hpIndicator: {fileID: 226003891}
-  _foodIndicator: {fileID: 298325325}
-  _speelIndicator: {fileID: 682166642}
 --- !u!1 &1957855999
 GameObject:
   m_ObjectHideFlags: 0
@@ -10629,22 +10660,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8999517870217588064, guid: 6ff873596be37954ba0a33086af31087, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1887572546}
-    - targetCorrespondingSourceObject: {fileID: 8999517870217588064, guid: 6ff873596be37954ba0a33086af31087, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1887572545}
-    - targetCorrespondingSourceObject: {fileID: 8999517870217588064, guid: 6ff873596be37954ba0a33086af31087, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1887572549}
-    - targetCorrespondingSourceObject: {fileID: 8999517870217588064, guid: 6ff873596be37954ba0a33086af31087, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1887572548}
-    - targetCorrespondingSourceObject: {fileID: 8999517870217588064, guid: 6ff873596be37954ba0a33086af31087, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1887572547}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ff873596be37954ba0a33086af31087, type: 3}
 --- !u!1001 &4735955860330948050
 PrefabInstance:
@@ -10942,3 +10958,4 @@ SceneRoots:
   - {fileID: 1534533440}
   - {fileID: 895999272}
   - {fileID: 1335832825}
+  - {fileID: 565731313}

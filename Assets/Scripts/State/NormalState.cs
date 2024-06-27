@@ -42,7 +42,7 @@ namespace State
 
         public override void ExitState(PlayerStateManager player)
         {
-            Debug.Log("Playe is exiting Normal State");
+            
         }
     }
 }

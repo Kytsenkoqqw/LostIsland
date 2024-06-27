@@ -13,7 +13,7 @@ namespace State
 
         public override void EnterState(PlayerStateManager player)
         {
-            Debug.Log("Player is now Sleepy");
+            
             // Уменьшение скорости при входе в состояние сонливости
             player.SetSpeed(_reducedSpeed);
         }
