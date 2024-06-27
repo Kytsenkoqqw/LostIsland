@@ -2970,6 +2970,7 @@ GameObject:
   - component: {fileID: 565731311}
   - component: {fileID: 565731310}
   - component: {fileID: 565731309}
+  - component: {fileID: 565731314}
   m_Layer: 0
   m_Name: StateManager
   m_TagString: Untagged
@@ -3052,6 +3053,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &565731314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565731308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551ed7157da147649ac9cde805f780c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hpIndicator: {fileID: 226003891}
+  _foodIndicator: {fileID: 298325325}
+  _sleepIndicator: {fileID: 682166642}
+  _foodDecreaseRate: 0.01
+  _sleepDecreaseRate: 0.05
 --- !u!1001 &578097749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5889,6 +5907,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037028473}
   m_CullTransparentMesh: 1
+--- !u!1 &1040343753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1040343754}
+  m_Layer: 0
+  m_Name: FloodTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1040343754
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040343753}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 67.3228, y: 3, z: 91.49912}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1051706743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8240,9 +8289,8 @@ GameObject:
   - component: {fileID: 1618101908}
   - component: {fileID: 1618101910}
   - component: {fileID: 1618101909}
-  - component: {fileID: 1618101911}
   m_Layer: 5
-  m_Name: Indicators
+  m_Name: PlayerIndicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8308,23 +8356,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618101907}
   m_CullTransparentMesh: 1
---- !u!114 &1618101911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1618101907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 551ed7157da147649ac9cde805f780c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hpIndicator: {fileID: 226003891}
-  _foodIndicator: {fileID: 298325325}
-  _sleepIndicator: {fileID: 682166642}
-  _foodDecreaseRate: 0.01
-  _sleepDecreaseRate: 0.01
 --- !u!1001 &1664991038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9135,6 +9166,7 @@ GameObject:
   - component: {fileID: 1872141864}
   - component: {fileID: 1872141863}
   - component: {fileID: 1872141862}
+  - component: {fileID: 1872141866}
   m_Layer: 0
   m_Name: 'Ocean '
   m_TagString: Untagged
@@ -9223,12 +9255,26 @@ Transform:
   m_GameObject: {fileID: 1872141861}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 95.264435, y: 2.207983, z: 95.64844}
+  m_LocalPosition: {x: 95.264435, y: 2.2, z: 95.64844}
   m_LocalScale: {x: 20, y: 1, z: 30}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1872141866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872141861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da758fa67b95a7d4385d654fb045082a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _target: {fileID: 1040343754}
+  _speed: 5
 --- !u!1 &1880693917
 GameObject:
   m_ObjectHideFlags: 0
@@ -10959,3 +11005,4 @@ SceneRoots:
   - {fileID: 895999272}
   - {fileID: 1335832825}
   - {fileID: 565731313}
+  - {fileID: 1040343754}

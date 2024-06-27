@@ -31,9 +31,16 @@ namespace State
 
         public void ChangeState(PlayerState newState)
         {
+            if (currentState == newState)
+            {
+                // Не делать ничего, если текущее состояние уже равно новому состоянию
+                return;
+            }
+
+            // Установить новое состояние
             currentState.ExitState(this);
+            newState.EnterState(this);
             currentState = newState;
-            currentState.EnterState(this);
         }
         
         public void SetSpeed(float speed)

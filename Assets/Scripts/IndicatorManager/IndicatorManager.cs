@@ -51,9 +51,5 @@ public class IndicatorManager : MonoBehaviour
         {
             _playerStateManager.ChangeState(_playerStateManager.SleepyState);
         }
-        else
-        {
-            _playerStateManager.ChangeState(_playerStateManager.NormalState);
-        }
     }
 }

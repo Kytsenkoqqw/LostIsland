@@ -135,6 +135,9 @@
             <e p="ChoppingWoodSound.cs" t="Include" />
             <e p="TreeDestroy.cs" t="Include" />
           </e>
+          <e p="Weather" t="Include">
+            <e p="Flood.cs" t="Include" />
+          </e>
         </e>
         <e p="Shader" t="Include">
           <e p="TeleportShader.shader" t="Include" />
