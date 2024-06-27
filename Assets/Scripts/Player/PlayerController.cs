@@ -19,4 +19,9 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.LookRotation(_rb.velocity);
         }
     }
+    
+    public void SetMoveSpeed(float speed)
+    {
+        _moveSpeed = speed;
+    }
 }

@@ -90,6 +90,9 @@
           <e p="GameManager" t="Include">
             <e p="GameManager.cs" t="Include" />
           </e>
+          <e p="IndicatorManager" t="Include">
+            <e p="IndicatorManager.cs" t="Include" />
+          </e>
           <e p="InventoryPlayer" t="Include">
             <e p="InterfaceInventory" t="Include">
               <e p="IBeginDragHandler.cs" t="Include" />
@@ -119,7 +122,11 @@
             <e p="ShowButtonTravel.cs" t="Include" />
           </e>
           <e p="State" t="Include">
+            <e p="HungryState.cs" t="Include" />
+            <e p="NormalState.cs" t="Include" />
             <e p="PlayerState.cs" t="Include" />
+            <e p="PlayerStateManager.cs" t="Include" />
+            <e p="SleepyState.cs" t="Include" />
           </e>
           <e p="Travel" t="Include">
             <e p="Travel.cs" t="Include" />

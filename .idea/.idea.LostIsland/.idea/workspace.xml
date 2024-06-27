@@ -32,6 +32,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IndicatorManager/IndicatorManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/ChestButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DayTime/DayTime.cs" root0="FORCE_HIGHLIGHTING" />
@@ -46,12 +47,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Chest/Chest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ShowButtonChest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ShowChestButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ClosedChestAnimation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tree/TreeTrigger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tree/Tree.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/IShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadScreen/LoadScreen.cs" />
@@ -97,6 +92,12 @@
         <option value="$PROJECT_DIR$/Assets/LoadScreen/LoadScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DayTime/DayTime.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/State/PlayerState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/State/NormalState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/State/HungryState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/State/SleepyState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IndicatorManager/IndicatorManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/State/PlayerStateManager.cs" />
       </list>
     </option>
   </component>
@@ -194,7 +195,8 @@
       <workItem from="1718023207404" duration="1688000" />
       <workItem from="1718377680325" duration="3008000" />
       <workItem from="1719313867488" duration="4215000" />
-      <workItem from="1719323048320" duration="1458000" />
+      <workItem from="1719323048320" duration="1554000" />
+      <workItem from="1719493399444" duration="2839000" />
     </task>
     <servers />
   </component>
@@ -216,10 +218,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="794" y="221" key="RiderGenerateDialog" timestamp="1716637679657">
+    <state x="794" y="221" key="RiderGenerateDialog" timestamp="1719495353223">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1716637679657" />
+    <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1719495353223" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1717782755847">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
