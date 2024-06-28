@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace State
@@ -8,27 +9,27 @@ namespace State
     {
         [SerializeField] private Image _hpIndicator;
         [SerializeField] private Image _foodIndicator;
-        [SerializeField] private Image _speelIndicator;
+        [SerializeField] private Image _sleepIndicator;
         
         public override void EnterState(PlayerStateManager player)
         {
             float foodFillAmount = _foodIndicator.fillAmount;
-            float sleepFillAmount = _speelIndicator.fillAmount;
-            
-            if (foodFillAmount > 0.7f)
+            float sleepFillAmount = _sleepIndicator.fillAmount;
+
+            if (foodFillAmount < 0.3f)
             {
-                player.ChangeState(player.NormalState);
+                player.ChangeState(player.HungryState);
             }
-            else if (sleepFillAmount > 0.7f)
+            else if (sleepFillAmount < 0.5f)
             {
-                player.ChangeState(player.NormalState);
+                player.ChangeState(player.SleepyState);
             }
         }
 
         public override void UpdateState(PlayerStateManager player)
         {
             float foodFillAmount = _foodIndicator.fillAmount;
-            float sleepFillAmount = _speelIndicator.fillAmount;
+            float sleepFillAmount = _sleepIndicator.fillAmount;
             
             if (foodFillAmount < 0.7f)
             {

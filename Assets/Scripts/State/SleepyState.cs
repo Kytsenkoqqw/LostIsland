@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 
@@ -7,14 +8,20 @@ namespace State
 {
     public class SleepyState : PlayerState
     {
+        [SerializeField] private AudioSource _sleepySound;
+        
         [SerializeField] private Image _sleepIndicator;
         [SerializeField] private float _normalSpeed = 5f; // Нормальная скорость
         [SerializeField] private float _reducedSpeed = 2f; // Уменьшенная скорость
 
+        private void Start()
+        {
+            _sleepySound = GetComponent<AudioSource>();
+        }
+
         public override void EnterState(PlayerStateManager player)
         {
-            
-            // Уменьшение скорости при входе в состояние сонливости
+            _sleepySound.Play();
             player.SetSpeed(_reducedSpeed);
         }
 
@@ -31,7 +38,6 @@ namespace State
 
         public override void ExitState(PlayerStateManager player)
         {
-            Debug.Log("Player is no longer Sleepy");
             // Восстановление нормальной скорости при выходе из состояния сонливости
             player.SetSpeed(_normalSpeed);
         }

@@ -92,12 +92,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DayTime/DayTime.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/State/PlayerState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/State/SleepyState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/State/HungryState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IndicatorManager/IndicatorManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weather/Flood.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/State/NormalState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/State/PlayerStateManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Weather/Flood.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/State/HungryState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/State/SleepyState.cs" />
       </list>
     </option>
   </component>
@@ -197,7 +197,8 @@
       <workItem from="1719313867488" duration="4215000" />
       <workItem from="1719323048320" duration="1554000" />
       <workItem from="1719493399444" duration="5673000" />
-      <workItem from="1719512984115" duration="597000" />
+      <workItem from="1719512984115" duration="1333000" />
+      <workItem from="1719578063727" duration="1202000" />
     </task>
     <servers />
   </component>

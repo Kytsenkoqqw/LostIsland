@@ -10,7 +10,7 @@ namespace State
         public HungryState HungryState = new HungryState();
         public SleepyState SleepyState = new SleepyState();
         public NormalState NormalState = new NormalState();
-        
+
         private PlayerState currentState;
         private PlayerController _playerController;
         private IndicatorManager _indicatorManager;
