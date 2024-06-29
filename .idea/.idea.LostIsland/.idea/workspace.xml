@@ -30,6 +30,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/WaterEnemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IndicatorManager/IndicatorManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -47,7 +48,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Button/IShowButtonTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadScreen/LoadScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/Shader/TeleportShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/ChestButton.cs" />
@@ -98,6 +98,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/State/PlayerStateManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/State/HungryState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/State/SleepyState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/WaterEnemy.cs" />
       </list>
     </option>
   </component>
@@ -198,7 +199,8 @@
       <workItem from="1719323048320" duration="1554000" />
       <workItem from="1719493399444" duration="5673000" />
       <workItem from="1719512984115" duration="1333000" />
-      <workItem from="1719578063727" duration="1202000" />
+      <workItem from="1719578063727" duration="1797000" />
+      <workItem from="1719661912503" duration="1742000" />
     </task>
     <servers />
   </component>
