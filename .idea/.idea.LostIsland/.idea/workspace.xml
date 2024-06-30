@@ -30,15 +30,16 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/WaterEnemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/SpawnEnemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IndicatorManager/IndicatorManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/ShowButtonTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/ChestButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DayTime/DayTime.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Zenject/GameInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tree/TreeDestroy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/LoadScreen/LoadScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ship/ShowButtonTravel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InventoryPlayer/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChestInventory/InventoryChest.cs" root0="FORCE_HIGHLIGHTING" />
@@ -48,9 +49,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/LoadScreen/LoadScreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/Shader/TeleportShader.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Button/ChestButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tree/TreeDestroy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuManager/ManuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Chest/ChestAnimation.cs" />
@@ -99,6 +97,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/State/HungryState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/State/SleepyState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/WaterEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Zenject/GameInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/SpawnEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
       </list>
     </option>
   </component>
@@ -200,7 +201,8 @@
       <workItem from="1719493399444" duration="5673000" />
       <workItem from="1719512984115" duration="1333000" />
       <workItem from="1719578063727" duration="1797000" />
-      <workItem from="1719661912503" duration="1742000" />
+      <workItem from="1719661912503" duration="2420000" />
+      <workItem from="1719763153343" duration="2794000" />
     </task>
     <servers />
   </component>
@@ -230,5 +232,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1717782755847" />
+    <state x="623" y="225" key="search.everywhere.popup" timestamp="1719668554646">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1719668554646" />
   </component>
 </project>
